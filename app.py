@@ -15,7 +15,7 @@ def resultat():
         "q1": "b",
         "q2": "b",
         "q3": "c",
-        "q4": "web sémantique",
+        "q4": "a",
         "q5": "c",
         "q6": "b"
     }
