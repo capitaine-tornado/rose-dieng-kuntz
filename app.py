@@ -27,3 +27,8 @@ def resultat():
                 score += 1
 
     return render_template('resultat.html', score=score, total=len(bonnes_reponses))
+
+
+
+if __name__ == "__main__":
+  app.run(host='0.0.0.0', port=81)
