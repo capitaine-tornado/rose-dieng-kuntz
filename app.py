@@ -2,21 +2,28 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-
+# Page du formulaire
 @app.route('/')
 def index():
-  return render_template('index.html')
+    return render_template('index.html')
 
-
-@app.route('/resultat', methods=['GET'])
+# Page de résultat
+@app.route('/resultat', methods=['POST'])
 def resultat():
-  result = request.args
-  n = result['r']
-  q = result['g']
-  r = result['b']
-  p = result['prenom']
-  return render_template("resultat.html", r=n, prenom=p, g=q, b=r)
+    score = 0
+    bonnes_reponses = {
+        "q1": "b",
+        "q2": "b",
+        "q3": "c",
+        "q4": "web sémantique",
+        "q5": "c",
+        "q6": "b"
+    }
 
+    for key in bonnes_reponses:
+        reponse = request.form.get(key)
+        if reponse:
+            if reponse.strip().lower() == bonnes_reponses[key]:
+                score += 1
 
-if __name__ == "__main__":
-  app.run(host='0.0.0.0', port=81)
+    return render_template('resultat.html', score=score, total=len(bonnes_reponses))
