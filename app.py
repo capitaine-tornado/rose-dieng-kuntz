@@ -10,7 +10,10 @@ def index():
 @app.route('/qcm')
 def qcm():
     return render_template('qcm.html')
-
+@app.route('/page2')
+def page2():
+    return render_template('page2.html')
+    
 @app.route('/resultat', methods=['POST'])
 def resultat():
     score = 0
