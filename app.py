@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Page du formulaire
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('page1.html')
 
 # Page de résultat
 @app.route('/resultat', methods=['POST'])
