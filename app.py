@@ -11,7 +11,7 @@ def index():
 @app.route('/resultat', methods=['POST'])
 def resultat():
     score = 0
-    bonnes_reponses = {
+    bor = {
         "q1": "b",
         "q2": "b",
         "q3": "c",
@@ -20,13 +20,13 @@ def resultat():
         "q6": "b"
     }
 
-    for key in bonnes_reponses:
+    for key in bor:
         reponse = request.form.get(key)
         if reponse:
-            if reponse.strip().lower() == bonnes_reponses[key]:
+            if reponse.strip().lower() == bor[key]:
                 score += 1
 
-    return render_template('resultat.html', score=score, total=len(bonnes_reponses))
+    return render_template('resultat.html', score=score, total=len(bor))
 
 
 
