@@ -52,3 +52,24 @@ img {
   border-radius: 12px;
   margin-top: 30px;
 }
+
+table {
+  margin: 40px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #999;
+  text-align: center;
+}
+
+thead {
+  background-color: #dfe6e9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f2f6;
+}
+
