@@ -20,6 +20,12 @@ p {
   width: 60%;
 }
 
+ul, ol {
+  margin-left: 40px;   /* marge à gauche pour bien placer les puces */
+  padding-left: 20px;  /* indentation des puces */
+  text-align: left;    /* aligne le texte à gauche */
+}
+
 a {
   text-decoration: none;
   color: #3498db;
