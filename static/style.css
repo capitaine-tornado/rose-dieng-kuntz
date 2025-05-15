@@ -21,7 +21,7 @@ p {
 }
 
 ul, ol {
-  margin-left: 40px;   /* marge à gauche pour bien placer les puces */
+  margin-left: 80px;   /* marge à gauche pour bien placer les puces */
   padding-left: 20px;  /* indentation des puces */
   text-align: left;    /* aligne le texte à gauche */
 }
