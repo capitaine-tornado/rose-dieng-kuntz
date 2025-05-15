@@ -100,6 +100,12 @@ tbody tr:nth-child(even) {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   z-index: -1;             /* passe derrière le texte */
+
+  /* Pour centrer le texte à l’intérieur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .texte-demi-cercle {
