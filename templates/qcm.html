@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-    <title>Questionnaire</title>
+    <title>Questionnaire sur Rose Dieng-Kuntz</title>
 </head>
     <H1>Questionnaire</H1>
      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">
  <img src="{{ url_for('static', filename='question.png') }}" width="300">
 </a>
 <body>
-    <h1>Questionnaire sur Rose Dieng-Kuntz</h1>
     <form action="/resultat" method="post">
         <p>1. Quel pays est le pays d’origine de Rose Dieng-Kuntz ?<br>
             <input type="radio" name="q1" value="a"> Cameroun<br>
