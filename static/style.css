@@ -87,3 +87,17 @@ tbody tr:nth-child(even) {
 .bottom-space {
   height: 100px;
 }
+
+.demi-cercle {
+  position: fixed;         /* reste visible même si on scrolle */
+  bottom: 0;               /* collé en bas */
+  right: 0;                /* collé à droite */
+  width: 300px;            /* largeur du demi-cercle */
+  height: 150px;           /* hauteur du demi-cercle */
+  background-color: #007BFF;  /* bleu (modifiable) */
+  border-top-left-radius: 300px;  /* arrondi du coin supérieur gauche */
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: -1;             /* passe derrière le texte */
+}
