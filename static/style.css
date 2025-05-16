@@ -46,6 +46,7 @@ a.top-title {
   text-decoration: none;
   color: #fc940d;
   font-weight: bold;
+  list-style: none;
 }
 
 button {
