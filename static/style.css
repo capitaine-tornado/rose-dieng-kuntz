@@ -93,6 +93,10 @@ tbody tr:nth-child(even) {
   background-color: #007BFF;
 }
 
+nav.nav {
+  display: flex;
+}
+
 .demi-cercle {
   position: fixed;         /* reste visible même si on scrolle */
   bottom: 0;               /* collé en bas */
