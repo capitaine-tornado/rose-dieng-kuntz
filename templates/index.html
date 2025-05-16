@@ -3,43 +3,43 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- lien vers le css -->
 	<title>Rose Dieng-Kuntz</title>
 </head>
 <body>
 
 <div class="top-space">
 	<ul class="menu">
-		<li><a class="top-title" href="{{ url_for('index') }}">Accueil</a></li>
+		<li><a class="top-title" href="{{ url_for('index') }}">Accueil</a></li> <!-- lien vers les autres pages -->
 		<li><a class="top-title"href="{{ url_for('page2') }}">Web sémantique</a></li>
 		<li><a class="top-title"href="{{ url_for('qcm') }}">QCM</a></li>
 		<li><p id="heure" style="color: white; margin: 0;"></p></li> <!-- Ceci est le bonus -->
 	</ul>
 </div>
 <h1>Rose Dieng-Kuntz</h1>
-	<img src="{{ url_for('static', filename='rose.jpeg') }}">
+	<img src="{{ url_for('static', filename='rose.jpeg') }}"> <!--  ajoute une image -->
 
-<p><strong>Rose Dieng-Kuntz</strong> est une figure emblématique de l’intelligence artificielle en France et en Afrique.</p>
+<p><strong>Rose Dieng-Kuntz</strong> est une figure emblématique de l’intelligence artificielle en France et en Afrique.</p>  <!-- met rose dieng-kuntz en gras   --> 
 
 <p class="Mini_title">Origine et formation :</p>
-<ul>
+<ul> <!--  met les points devant les paragraphes --> 
     <li>Née en 1956 au Sénégal.</li>
-    <li>Première femme africaine à intégrer l’<a href="https://www.polytechnique.edu/" target="_blank">École Polytechnique de Paris</a>, une école très prestigieuse.</li>
+    <li>Première femme africaine à intégrer l’<a href="https://www.polytechnique.edu/" target="_blank">École Polytechnique de Paris</a>, une école très prestigieuse.</li> <!-- met un lien vers le site polytechnique.edu  --> 
 </ul>
 
 <p class="Mini_title">Carrière professionnelle :</p>
 <ul>
     <li>Spécialisée en informatique après ses études.</li>
-    <li>A travaillé à l’<a href="https://www.inria.fr/fr/recherche-innovation-numerique" target="_blank">INRIA</a> (Institut national de recherche en informatique et en automatique).</li>
+    <li>A travaillé à l’<a href="https://www.inria.fr/fr/recherche-innovation-numerique" target="_blank">INRIA</a> (Institut national de recherche en informatique et en automatique).</li> <!-- met un lien vers le site inria.fr  --> 
     <li>A dirigé des recherches sur :</li>
     <ul>
         <li>La gestion des connaissances.</li>
-        <li>Le<a href="{{ url_for('page2') }}"> Web sémantique.</a></li>
+        <li>Le<a href="{{ url_for('page2') }}"> Web sémantique.</a></li> <!--  met un lien vers la page 2 --> 
     </ul>
 </ul>
 
-<p class="Mini_title">Engagements et distinctions :</p>
-
+<p class="Mini_title">Engagements et distinctions :</p> <!--  crée une class pour le css --> 
+ 
 <ul>
     <li>Pionnière dans la promotion des femmes dans les métiers scientifiques et techniques.</li>
     <li>Lauréate en 2005 du prix Irène Joliot-Curie, qui récompense les femmes scientifiques remarquables.</li>
@@ -54,7 +54,7 @@
 </ul>
 
 <h2>Domaines de recherche de Rose Dieng-Kuntz</h2>
-
+ <!-- met un tableau chaque tr est le début dune ligne -->
 <table>
   <thead>
     <tr>
@@ -78,7 +78,7 @@
   </tbody>
 </table>
 	
-<div class="demi-cercle">
+<div class="demi-cercle">  <!--  ajoute les credits avec une class permet de faire un beau css --> 
   <p class="texte-demi-cercle">
     Projet 3 NSI<br>
     Hugo Marques<br>
