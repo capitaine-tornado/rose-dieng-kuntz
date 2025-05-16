@@ -18,7 +18,15 @@
     <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">
  <img src="{{ url_for('static', filename='resu.jpeg') }}" width="300">
 </a>
+
+{% if score == 0 %}
+    <p>Tu n'as pas obtenu de bonne réponse.</p>
+{% elif score == 1 %}
+    <p>Tu as obtenu 1/{{ total }} bonne réponse.</p>
+{% else %}
     <p>Tu as obtenu {{ score }}/{{ total }} bonnes réponses.</p>
+{% endif %}
+
 <h2> Le bobobobobonus</h2>
     <p id="heure"></p>
 <script>
