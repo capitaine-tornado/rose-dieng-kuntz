@@ -100,6 +100,12 @@ tbody tr:nth-child(even) {
   background-color: #007BFF;
 }
 
+ul.menu {
+  list-style: none;       /* Supprime les puces */
+  padding: 0;             /* Supprime le retrait par défaut */
+  margin: 0;
+}
+
 nav.nav {
   display: flex;
 }
