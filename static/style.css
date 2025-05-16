@@ -23,7 +23,7 @@ p {
 .container {
   margin: 0 auto;         /* centre horizontalement */
   max-width: 900px;       /* limite la largeur */
-  padding: 0 80px;        /* marge intérieure gauche/droite */
+  padding: 0 10px;        /* marge intérieure gauche/droite */
   text-align: left;       /* texte aligné à gauche */
 }
 
