@@ -162,3 +162,7 @@ ul.menu {
   margin: 0 auto;
   text-align: left;
 }
+
+.contentbis li {
+  margin-bottom: 30px;
+}
