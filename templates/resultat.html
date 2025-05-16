@@ -2,34 +2,34 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- importe le css -->
 
     <title>Résultat du QCM</title>
 </head>
 <body>
 <div class="top-space">
 	<ul class="menu">
-		<li><a class="top-title" href="{{ url_for('index') }}">Accueil</a></li>
+		<li><a class="top-title" href="{{ url_for('index') }}">Accueil</a></li> <!-- ùet le lien vers les autres pages -->
 		<li><a class="top-title"href="{{ url_for('page2') }}">Web sémantique</a></li>
 		<li><a class="top-title"href="{{ url_for('qcm') }}">QCM</a></li>
 		<li><p id="heure" style="color: white; margin: 0;"></p></li> <!-- Ceci est le bonus -->
 	</ul>
 
 </div>
-    <h1>Résultat du questionnaire</h1>
+    <h1>Résultat du questionnaire</h1>   <!-- easter egg quand on clique sur la photo -->
     <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">
  <img src="{{ url_for('static', filename='resu.jpeg') }}" width="300">
 </a>
 
-{% if score == 0 %}
+{% if score == 0 %}     <!-- affiche une phrase en fonction du résultat au qcm -->
     <p>Tu n'as pas obtenu de bonne réponse.</p>
 {% elif score == 1 %}
     <p>Tu as obtenu 1/{{ total }} bonne réponse.</p>
 {% else %}
     <p>Tu as obtenu {{ score }}/{{ total }} bonnes réponses.</p>
 {% endif %}
-
-<script>
+<!-- affiche l'heure-->
+<script>   
   setInterval(() => {
     document.getElementById("heure").innerText = new Date().toLocaleTimeString();
   }, 1000);
