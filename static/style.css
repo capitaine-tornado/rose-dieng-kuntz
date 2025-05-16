@@ -42,6 +42,12 @@ a:hover {
   color: #1abc9c;
 }
 
+a.top-title {
+  text-decoration: none;
+  color: #fc940d;
+  font-weight: bold;
+}
+
 button {
   background-color: #2980b9;
   color: white;
