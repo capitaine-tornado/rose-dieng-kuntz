@@ -22,7 +22,7 @@ p {
 
 .container {
   margin: 0 auto;         /* centre horizontalement */
-  max-width: 1500px;       /* limite la largeur */
+  max-width: 2000px;       /* limite la largeur */
   padding: 0 20px;        /* marge intérieure gauche/droite */
   text-align: left;       /* texte aligné à gauche */
 }
