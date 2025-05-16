@@ -105,7 +105,7 @@ ul.menu {
   padding: 0;             /* Supprime le retrait par défaut */
   margin: 0;
   display: flex;
-  justify-content: space-beetween;
+  justify-content: space-between;
 }
 
 .demi-cercle {
