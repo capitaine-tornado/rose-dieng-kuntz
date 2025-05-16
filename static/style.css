@@ -30,7 +30,7 @@ p {
 
 ul, ol {
   margin-left: 80px;   /* marge à gauche pour bien placer les puces */
-  padding-left: 20px;  /* indentation des puces */
+  padding-left: 20px;  /* fait l'indentation  */
   text-align: left;    /* aligne le texte à gauche */
 }
 
@@ -109,8 +109,8 @@ tbody tr:nth-child(even) {
 }
 
 ul.menu {
-  list-style: none;       /* Supprime les puces */
-  padding: 0;             /* Supprime le retrait par défaut */
+  list-style: none;       /* Supprime les trucs moches  */
+  padding: 0;             /*  remet correctement les espaces  */
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -128,7 +128,7 @@ ul.menu {
   right: 0;                /* collé à droite */
   width: 300px;            /* largeur du demi-cercle */
   height: 150px;           /* hauteur du demi-cercle */
-  background-color: #007BFF;  /* bleu (modifiable) */
+  background-color: #007BFF;  
   border-top-left-radius: 300px;  /* arrondi du coin supérieur gauche */
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
