@@ -9,11 +9,11 @@
 </head>
 <body>
 <div class="top-space">
-	<nav class="nav">
-		<li><a href="{{ url_for('index') }}"class="top-title">Accueil</a></li>
-		<li><a href="{{ url_for('page2') }}"class="top-title">Web sémantique</a></li>
-		<li><a href="{{ url_for('qcm') }}"class="top-title">QCM</a></li>
-	</nav>
+	<ul class="menu">
+		<li><a class="top-title" href="{{ url_for('index') }}">Accueil</a></li>
+		<li><a class="top-title"href="{{ url_for('page2') }}">Web sémantique</a></li>
+		<li><a class="top-title"href="{{ url_for('qcm') }}">QCM</a></li>
+	</ul>
 </div>
 <h1>Le Web sémantique</h1>
 	<img src="{{ url_for('static', filename='ws.png') }}">
