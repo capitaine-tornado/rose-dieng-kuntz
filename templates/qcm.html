@@ -43,6 +43,11 @@
             <input type="radio" name="q6" value="c"> 2012
         </p>
         <input type="submit" value="Envoyer">
+        <script>
+  setInterval(() => {
+    document.getElementById("heure").innerText = new Date().toLocaleTimeString();
+  }, 1000);
+</script>
     </form>
 <div class="bottom-space"></div>
 </body>
