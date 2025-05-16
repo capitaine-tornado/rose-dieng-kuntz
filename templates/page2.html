@@ -52,5 +52,10 @@
 <a href="{{ url_for('index') }}">--> Retour à la première page <--</a>
 <a href="{{ url_for('qcm') }}">                             --> Accéder au QCM <--</a>
 <div class="bottom-space"></div>
+<script>
+  setInterval(() => {
+    document.getElementById("heure").innerText = new Date().toLocaleTimeString();
+  }, 1000);
+</script>
 </body>
 </html>
