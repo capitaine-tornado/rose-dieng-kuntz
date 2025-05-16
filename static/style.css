@@ -1,4 +1,4 @@
-body {
+Wbody {
   background-color: #f0f4f8;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -106,9 +106,9 @@ ul.menu {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  width: 700px;
+  width: 800px;
   margin-left: 50px;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 .demi-cercle {
