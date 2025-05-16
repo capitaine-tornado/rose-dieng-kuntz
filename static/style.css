@@ -35,8 +35,11 @@ ul, ol {
 }
 
 .Mini_title {
-  margin-left: 40px;
   color: #fc940d;
+  max-width: 900px;
+  margin: 0 auto; /* Centre horizontalement */
+  padding: 20px;
+  text-align: center; /* Le texte reste aligné à gauche */
 }
 
 a {
