@@ -133,7 +133,7 @@ ul.menu {
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  z-index: -1;             /* passe derrière le texte */
+  z-index: 1;             /* passe devant le texte */
 
   /* Pour centrer le texte à l’intérieur */
   display: flex;
