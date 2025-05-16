@@ -35,7 +35,7 @@ a {
   text-decoration: none;
   color: #3498db;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s; /*changement de couleur en 0,3s*/
 }
 
 a:hover {
