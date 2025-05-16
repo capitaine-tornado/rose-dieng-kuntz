@@ -3,24 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- importe le css-->
 
 	<title>Le Web sémantique</title>
 </head>
 <body>
 <div class="top-space">
 	<ul class="menu">
-		<li><a class="top-title" href="{{ url_for('index') }}">Accueil</a></li>
+		<li><a class="top-title" href="{{ url_for('index') }}">Accueil</a></li> <!-- lien vers les autres pages -->
 		<li><a class="top-title"href="{{ url_for('page2') }}">Web sémantique</a></li>
 		<li><a class="top-title"href="{{ url_for('qcm') }}">QCM</a></li>
 		<li><p id="heure" style="color: white; margin: 0;"></p></li> <!-- Ceci est le bonus -->
 	</ul>
 </div>
 <h1>Le Web sémantique</h1>
-	<img src="{{ url_for('static', filename='ws.png') }}">
+	<img src="{{ url_for('static', filename='ws.png') }}">   <!-- affiche une image -->
+  
 
-<div class="container">
-  <p>
+<div class="container"> <!-- nouvelle class pour le css -->
+  <p> <!-- chaque p est un paragraphe  -->
     Le Web sémantique est un concept qui consiste à rendre les contenus d’Internet compréhensibles par les machines. Il ne s’agit plus seulement de pages web lues par les humains, mais aussi d’un système où les ordinateurs peuvent analyser, classer et relier des informations de manière intelligente. Cela permet, par exemple, d’améliorer les moteurs de recherche, les assistants vocaux ou encore les bases de données.
   </p>
 
@@ -34,9 +35,11 @@
 </div>
 
 <h2>Comparaison Web classique vs Web sémantique</h2>
-
+<!-- question 1 -->
 <table border="1">
-  <thead>
+	
+  <!-- affiche un tableau, chaque tr est le début d'une ligne--> 
+  <thead> 
     <tr>
       <th>Critère</th>
       <th>Web classique</th>
@@ -63,9 +66,9 @@
 </table>
 
 
-<p><strong>Source :</strong> <a href="https://fr.wikipedia.org/wiki/Web_s%C3%A9mantique" target="_blank">Wikipedia - Web sémantique</a></p>
+<p><strong>Source :</strong> <a href="https://fr.wikipedia.org/wiki/Web_s%C3%A9mantique" target="_blank">Wikipedia - Web sémantique</a></p> <!-- lien ve rs la source wikipedia -->
 <div class="bottom-space"></div>
-
+<!-- affiche l'heure -->
 <script>
   setInterval(() => {
     document.getElementById("heure").innerText = new Date().toLocaleTimeString();
