@@ -13,6 +13,7 @@
 		<li><a class="top-title" href="{{ url_for('index') }}">Accueil</a></li>
 		<li><a class="top-title"href="{{ url_for('page2') }}">Web sémantique</a></li>
 		<li><a class="top-title"href="{{ url_for('qcm') }}">QCM</a></li>
+		<li><p id="heure" style="color: white; margin: 0;"></p></li>
 	</ul>
 </div>
 <h1>Le Web sémantique</h1>
@@ -65,5 +66,10 @@
 <p><strong>Source :</strong> <a href="https://fr.wikipedia.org/wiki/Web_s%C3%A9mantique" target="_blank">Wikipedia - Web sémantique</a></p>
 <div class="bottom-space"></div>
 
+<script>
+  setInterval(() => {
+    document.getElementById("heure").innerText = new Date().toLocaleTimeString();
+  }, 1000);
+</script>
 </body>
 </html>
