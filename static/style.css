@@ -154,3 +154,9 @@ ul.menu {
   padding: 20px;
   text-align: left; /* Le texte reste aligné à gauche */
 }
+.contentbis {
+  max-width: 900px;
+  margin: 0 auto; /* Centre horizontalement */
+  padding: 20px;
+  text-align: center; /* Le texte reste aligné à gauche */
+}
