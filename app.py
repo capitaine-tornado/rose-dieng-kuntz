@@ -8,7 +8,7 @@ def index():   #dit quel est la page principale
     return render_template('index.html')
     
 @app.route('/qcm')
-def qcm():       #crée le qcm ety dit sur quelles pages il sera 
+def qcm():       #crée le qcm et dit sur quelles pages il sera 
     return render_template('qcm.html')
 @app.route('/page2')
 def page2():
